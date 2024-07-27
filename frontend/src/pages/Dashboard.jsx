@@ -16,7 +16,7 @@ function Dashboard() {
       try {
         localStorage.removeItem("accessToken");
         localStorage.removeItem("refreshToken");
-        const response = await axios.post('http://127.0.0.1:8080/api/v1/users/logout',{},config
+        const response = await axios.post('https://login-page-smoky-phi.vercel.app/api/v1/users/logout',{},config
         );
         if(!response.data.success)
         {
@@ -38,7 +38,7 @@ function Dashboard() {
   const handleDelete = async(e)=>{
     setDeleteButtonDisabled(false);
       try {
-        const response = await axios.post('http://127.0.0.1:8080/api/v1/users/delete',{},config
+        const response = await axios.post('https://login-page-smoky-phi.vercel.app/api/v1/users/delete',{},config
         );
         if(!response.data.success)
         {

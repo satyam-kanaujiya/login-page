@@ -17,7 +17,7 @@ function Register() {
         e.preventDefault();
         const {username,email,password,role} = data;
         try {
-            const response = await axios.post('http://127.0.0.1:8080/api/v1/users/register',{
+            const response = await axios.post('https://login-page-smoky-phi.vercel.app/api/v1/users/register',{
                 username,email,password,role
             });
             if(!response.data.success){

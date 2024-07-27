@@ -18,7 +18,6 @@ function Dashboard() {
         localStorage.removeItem("refreshToken");
         const response = await axios.post('http://127.0.0.1:8080/api/v1/users/logout',{},config
         );
-        // console.log(response.data);
         if(!response.data.success)
         {
            toast.error(response.data.message);
@@ -70,7 +69,6 @@ function Dashboard() {
                     <a href="/" className="text-white text-xl font-bold">Your dashboard</a>
                 </div>
                 <div className="flex items-center space-x-4">
-                    {/* Add other navigation links if needed */}
                 </div>
                 <div className="flex items-center space-x-4">
                          <button onClick={handleLogout} disabled={isButtonDisabled} className="text-gray-300 hover:text-white">Logout</button>
@@ -79,7 +77,6 @@ function Dashboard() {
             </div>
         </nav>
     <div className="flex justify-center items-center flex-1 container mx-auto">
-        {/* Your content here */}
         <h1 className="font-serif text-center text-gray-600 py-10">Welcome to your dashboard</h1>
     </div>
     </div>

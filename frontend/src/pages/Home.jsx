@@ -9,7 +9,6 @@ function Home() {
                     <a href="/" className="text-white text-xl font-bold">My Website</a>
                 </div>
                 <div className="flex items-center space-x-4">
-                    {/* Add other navigation links if needed */}
                 </div>
                 <div className="flex items-center space-x-4">
                     <Link to={"/login"}>
@@ -22,7 +21,6 @@ function Home() {
             </div>
         </nav>
     <div className="flex justify-center items-center flex-1 container mx-auto ">
-        {/* Your content here */}
         <h1 className="font-serif text-4xl text-center">Welcome to my web page</h1>
     </div>
     </div>

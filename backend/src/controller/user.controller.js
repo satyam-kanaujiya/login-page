@@ -62,7 +62,6 @@ const registerUser = asyncHandler(async (req,res)=>{
     }
 
     const profileUrl = "";
-    console.log("i am going to be created");
     const user = await User.create(
         {
             username,

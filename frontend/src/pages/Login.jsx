@@ -17,7 +17,7 @@ function Login() {
         e.preventDefault();
         const {username,email,password} = data;
         try {
-            const response = await axios.post('http://127.0.0.1:8080/api/v1/users/login',{
+            const response = await axios.post('https://login-page-smoky-phi.vercel.app/api/v1/users/login',{
                 username,email,password
             });
             
